@@ -1,0 +1,124 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 95,
+      "symbol": "AnyCurrency.==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 99,
+      "symbol": "AnyCurrency.<(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 103,
+      "symbol": "AnyCurrency.hash(into:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 115,
+      "symbol": "AnyCurrency.zero",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 117,
+      "symbol": "AnyCurrency.+(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 121,
+      "symbol": "AnyCurrency.-(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 125,
+      "symbol": "AnyCurrency.*(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 129,
+      "symbol": "AnyCurrency./(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 133,
+      "symbol": "AnyCurrency.+=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 134,
+      "symbol": "AnyCurrency.-=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 135,
+      "symbol": "AnyCurrency.*=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 136,
+      "symbol": "AnyCurrency./=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 180,
+      "symbol": "String.StringInterpolation.appendInterpolation(localize:forLocale:nilDescription:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
+      "line": 195,
+      "symbol": "String.StringInterpolation.appendInterpolation(localize:withFormatter:nilDescription:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/CurrencyMint.swift",
+      "line": 19,
+      "symbol": "CurrencyMint.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/CurrencyMint.swift",
+      "line": 84,
+      "symbol": "CurrencyMint.lookup(byAlphaCode:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/CurrencyMint.swift",
+      "line": 249,
+      "symbol": "CurrencyMint.lookup(byNumCode:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency"
+}

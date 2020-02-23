@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SHP Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/SHP" class="dashAnchor"></a>
+    <a title="SHP Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Currency 0.3.1 Docs</a> (98% documented)</p>
+        <p class="header-right"><a href="https://github.com/peek-travel/swift-currency"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right"><a href="dash-feed://https%3A%2F%2Fpeek%2Dtravel%2Egitlab%2Eio%2Fswift%2Dcurrency%2Fdocsets%2FCurrency%2Exml"><img src="../img/dash.png"/>Install in Dash</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Currency Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SHP Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CurrencyMint.html">CurrencyMint</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String/StringInterpolation.html">– StringInterpolation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AnyCurrency.html">AnyCurrency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CurrencyMetadata.html">CurrencyMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CurrencyProtocol.html">CurrencyProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AED.html">AED</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AFN.html">AFN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ALL.html">ALL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AMD.html">AMD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ANG.html">ANG</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AOA.html">AOA</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ARS.html">ARS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AUD.html">AUD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AWG.html">AWG</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AZN.html">AZN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BAM.html">BAM</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BBD.html">BBD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BDT.html">BDT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BGN.html">BGN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BHD.html">BHD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BIF.html">BIF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BMD.html">BMD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BND.html">BND</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BOB.html">BOB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BRL.html">BRL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BSD.html">BSD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BTN.html">BTN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BWP.html">BWP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BYN.html">BYN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BZD.html">BZD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CAD.html">CAD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CDF.html">CDF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CHF.html">CHF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CLP.html">CLP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CNY.html">CNY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/COP.html">COP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CRC.html">CRC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CUC.html">CUC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CUP.html">CUP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CVE.html">CVE</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CZK.html">CZK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DJF.html">DJF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DKK.html">DKK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DOP.html">DOP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DZD.html">DZD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EGP.html">EGP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ERN.html">ERN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ETB.html">ETB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EUR.html">EUR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FJD.html">FJD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FKP.html">FKP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GBP.html">GBP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GEL.html">GEL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GHS.html">GHS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GIP.html">GIP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GMD.html">GMD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GNF.html">GNF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GTQ.html">GTQ</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GYD.html">GYD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HKD.html">HKD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HNL.html">HNL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HRK.html">HRK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HTG.html">HTG</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/HUF.html">HUF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IDR.html">IDR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ILS.html">ILS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/INR.html">INR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IQD.html">IQD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/IRR.html">IRR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ISK.html">ISK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JMD.html">JMD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JOD.html">JOD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JPY.html">JPY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KES.html">KES</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KGS.html">KGS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KHR.html">KHR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KMF.html">KMF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KPW.html">KPW</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KRW.html">KRW</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KWD.html">KWD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KYD.html">KYD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KZT.html">KZT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LAK.html">LAK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LBP.html">LBP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LKR.html">LKR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LRD.html">LRD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LSL.html">LSL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LYD.html">LYD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MAD.html">MAD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MDL.html">MDL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MGA.html">MGA</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MKD.html">MKD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MMK.html">MMK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MNT.html">MNT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MOP.html">MOP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MRU.html">MRU</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MUR.html">MUR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MVR.html">MVR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MWK.html">MWK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MXN.html">MXN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MYR.html">MYR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MZN.html">MZN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NAD.html">NAD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NGN.html">NGN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NIO.html">NIO</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NOK.html">NOK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NPR.html">NPR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NZD.html">NZD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OMR.html">OMR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PAB.html">PAB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PEN.html">PEN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PGK.html">PGK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PHP.html">PHP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PKR.html">PKR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PLN.html">PLN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PYG.html">PYG</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/QAR.html">QAR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RON.html">RON</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RSD.html">RSD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RUB.html">RUB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RWF.html">RWF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SAR.html">SAR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SBD.html">SBD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SCR.html">SCR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SDG.html">SDG</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SEK.html">SEK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SGD.html">SGD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SHP.html">SHP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SLL.html">SLL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SOS.html">SOS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SRD.html">SRD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SSP.html">SSP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/STN.html">STN</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SVC.html">SVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SYP.html">SYP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SZL.html">SZL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/THB.html">THB</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TJS.html">TJS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TMT.html">TMT</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TND.html">TND</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TOP.html">TOP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TRY.html">TRY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TTD.html">TTD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TWD.html">TWD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TZS.html">TZS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UAH.html">UAH</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UGX.html">UGX</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/USD.html">USD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UYU.html">UYU</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UYW.html">UYW</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UZS.html">UZS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VES.html">VES</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VND.html">VND</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VUV.html">VUV</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WST.html">WST</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/XAF.html">XAF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/XCD.html">XCD</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/XOF.html">XOF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/XPF.html">XPF</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/XXX.html">XXX</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/YER.html">YER</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ZAR.html">ZAR</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ZMW.html">ZMW</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ZWL.html">ZWL</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SHP</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SHP</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/CurrencyProtocol.html">CurrencyProtocol</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/CurrencyMetadata.html">CurrencyMetadata</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>The Saint Helena Pound (SHP) currency, as defined by ISO 4217.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Currency0A8MetadataP4nameSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Currency0A8MetadataP4nameSSvpZ">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/peek-travel/swift-currency/blob/0.3.1/Sources/Currency/ISOCurrencies.swift#L18">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Currency0A8MetadataP14alphabeticCodeSSvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/alphabeticCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Currency0A8MetadataP14alphabeticCodeSSvpZ">alphabeticCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">alphabeticCode</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/peek-travel/swift-currency/blob/0.3.1/Sources/Currency/ISOCurrencies.swift#L22">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Currency0A8MetadataP11numericCodes6UInt16VvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/numericCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Currency0A8MetadataP11numericCodes6UInt16VvpZ">numericCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">numericCode</span><span class="p">:</span> <span class="kt">UInt16</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/peek-travel/swift-currency/blob/0.3.1/Sources/Currency/ISOCurrencies.swift#L28">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Currency0A8MetadataP10minorUnitss5UInt8VvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/minorUnits" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Currency0A8MetadataP10minorUnitss5UInt8VvpZ">minorUnits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">minorUnits</span><span class="p">:</span> <span class="kt">UInt8</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/peek-travel/swift-currency/blob/0.3.1/Sources/Currency/ISOCurrencies.swift#L34">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Currency03AnyA0P10minorUnitss5Int64Vvp"></a>
+                    <a name="//apple_ref/swift/Property/minorUnits" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Currency03AnyA0P10minorUnitss5Int64Vvp">minorUnits</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minorUnits</span><span class="p">:</span> <span class="kt">Int64</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/peek-travel/swift-currency/blob/0.3.1/Sources/Currency/ISOCurrencies.swift#L40">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:8Currency03AnyA0P10minorUnitsxqd___tcSzRd__lufc"></a>
+                    <a name="//apple_ref/swift/Method/init(minorUnits:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:8Currency03AnyA0P10minorUnitsxqd___tcSzRd__lufc">init(minorUnits:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">minorUnits</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">BinaryInteger</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/peek-travel/swift-currency/blob/0.3.1/Sources/Currency/ISOCurrencies.swift#L61">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/peek-travel" target="_blank" rel="external">Peek Travel, Inc</a>. All rights reserved. (Last updated: 2020-02-23)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
