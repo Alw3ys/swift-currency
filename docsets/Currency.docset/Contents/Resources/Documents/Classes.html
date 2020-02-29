@@ -14,7 +14,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Currency 0.4.1 Docs</a> (98% documented)</p>
+        <p><a href="index.html">Currency 0.5.0 Docs</a> (98% documented)</p>
         <p class="header-right"><a href="https://github.com/peek-travel/swift-currency"><img src="img/gh.png"/>View on GitHub</a></p>
         <p class="header-right"><a href="dash-feed://https%3A%2F%2Fpeek%2Dtravel%2Egitlab%2Eio%2Fswift%2Dcurrency%2Fdocsets%2FCurrency%2Exml"><img src="img/dash.png"/>Install in Dash</a></p>
       </div>
@@ -34,6 +34,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Classes/CurrencyMint.html">CurrencyMint</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CurrencyMint/CurrencyIdentifier.html">– CurrencyIdentifier</a>
               </li>
             </ul>
           </li>
@@ -561,6 +564,15 @@
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CurrencyMint"></a>
+                <a name="//apple_ref/swift/Section/CurrencyMint" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/CurrencyMint"></a>
+                  <h3 class="section-name"><p>CurrencyMint</p>
+</h3>
+                </div>
+              </div>
               <ul>
                 <li class="item">
                   <div>
@@ -575,7 +587,34 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A generator class that supports lookup of ISO 4217 currencies by their alphabetic and numeric codes.</p>
+                        <p>A generator object that supports creation of type-safe currencies by their alphabetic or numeric code identifiers.</p>
+
+<p>By default, the generator only references the ISO 4217 specification of identifiers to determine which currency type to create.</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">usd</span> <span class="o">=</span> <span class="kt">CurrencyMint</span><span class="o">.</span><span class="n">standard</span><span class="o">.</span><span class="nf">make</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="s">"USD"</span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="mf">30.23</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">usd</span><span class="p">)</span>
+<span class="c1">// USD(30.23)</span>
+</code></pre>
+
+<p>If it&rsquo;s desired to support currencies not found in the supported ISO 4217 specification,
+a closure that will be referenced as a fallback can be provided at initialization:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mint</span> <span class="o">=</span> <span class="kt">CurrencyMint</span><span class="p">(</span><span class="nv">fallbackLookup</span><span class="p">:</span> <span class="p">{</span> <span class="n">identifier</span> <span class="k">in</span>
+  <span class="k">guard</span> <span class="n">identifier</span> <span class="o">==</span> <span class="o">.</span><span class="nf">alphaCode</span><span class="p">(</span><span class="s">"KED"</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span> <span class="k">return</span> <span class="kt">USD</span><span class="o">.</span><span class="k">self</span> <span class="cm">/* or nil */</span> <span class="p">}</span>
+  <span class="k">return</span> <span class="kt">KED</span><span class="o">.</span><span class="k">self</span> <span class="c1">// the custom currency type</span>
+<span class="p">}</span>
+<span class="k">let</span> <span class="nv">ked</span> <span class="o">=</span> <span class="n">mint</span><span class="o">.</span><span class="nf">make</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="s">"KED"</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">unknownCurrency</span> <span class="o">=</span> <span class="n">mint</span><span class="o">.</span><span class="nf">make</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="mi">666</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">ked</span><span class="p">,</span> <span class="n">unknownCurrency</span><span class="p">)</span>
+<span class="c1">// KED(0), USD(0)</span>
+</code></pre>
+
+<p>In most cases, it&rsquo;s desired to just provide a single fallback currency when type lookup fails:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mint</span> <span class="o">=</span> <span class="kt">CurrencyMint</span><span class="p">(</span><span class="n">defaultCurrency</span><span class="p">:</span> <span class="kt">USD</span><span class="o">.</span><span class="k">self</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">value</span> <span class="o">=</span> <span class="n">mint</span><span class="o">.</span><span class="nf">make</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="s">"_SL"</span><span class="p">,</span> <span class="nv">amount</span><span class="p">:</span> <span class="mi">300</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="c1">// USD(300)</span>
+</code></pre>
+
+<p>See <a href="https://www.iso.org/iso-4217-currency-codes.html">ISO 4217</a></p>
 
                         <a href="Classes/CurrencyMint.html" class="slightly-smaller">See more</a>
                       </div>
@@ -588,7 +627,7 @@
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/peek-travel/swift-currency/blob/0.4.1/Sources/Currency/CurrencyMint.swift#L18-L78">Show on GitHub</a>
+                        <a href="https://github.com/peek-travel/swift-currency/blob/0.5.0/Sources/Currency/CurrencyMint.swift#L79-L103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>

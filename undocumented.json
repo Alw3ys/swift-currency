@@ -100,23 +100,16 @@
     },
     {
       "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/CurrencyMint.swift",
-      "line": 19,
-      "symbol": "CurrencyMint.init()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "line": 26,
+      "symbol": "CurrencyMint.CurrencyIdentifier.alphaCode(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/CurrencyMint.swift",
-      "line": 84,
-      "symbol": "CurrencyMint.lookup(byAlphaCode:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/CurrencyMint.swift",
-      "line": 250,
-      "symbol": "CurrencyMint.lookup(byNumCode:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "line": 26,
+      "symbol": "CurrencyMint.CurrencyIdentifier.numericCode(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     }
   ],
