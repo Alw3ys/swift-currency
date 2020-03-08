@@ -86,15 +86,15 @@
     },
     {
       "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
-      "line": 203,
-      "symbol": "String.StringInterpolation.appendInterpolation(localize:forLocale:nilDescription:)",
+      "line": 260,
+      "symbol": "String.StringInterpolation.appendInterpolation(localize:for:nilDescription:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/runner/runners/2.165.2/work/swift-currency/swift-currency/Sources/Currency/AnyCurrency.swift",
-      "line": 218,
-      "symbol": "String.StringInterpolation.appendInterpolation(localize:withFormatter:nilDescription:)",
+      "line": 275,
+      "symbol": "String.StringInterpolation.appendInterpolation(localize:with:nilDescription:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
