@@ -3,6 +3,8 @@ Pod::Spec.new do |spec|
   spec.version = '1.0.0'
   spec.license = { type: 'MIT' }
   spec.homepage = 'https://github.com/peek-travel/swift-currency.git'
+  spec.author = { "Peek Travel Inc." => "experiences@peek.com" }
+  spec.summary = 'Type-safety and algorithms for working with money in Swift.'
   spec.source = {
     git: 'https://github.com/peek-travel/swift-currency.git',
     tag: spec.version
